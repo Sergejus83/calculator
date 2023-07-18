@@ -8,12 +8,15 @@ text_result.grid(columnspan=5)
 calculation = ""
 
 def add_to_calculation(symbol):
-    pass
+    global calculation
+    calculation += str(symbol)
+    text_result.delete(1.0, "end")
+    text_result.insert(1.0, calculation)
 
 def evaluate_calculation():
     pass
 
 def clear_field():
-    pass
+    pass 
 
 window.mainloop()
