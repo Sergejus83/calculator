@@ -1,2 +1,2 @@
-# calculator
-simply calculater in tkinter
+# the calculator
+simple calculater in tkinter
