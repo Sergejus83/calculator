@@ -14,7 +14,14 @@ def add_to_calculation(symbol):
     text_result.insert(1.0, calculation)
 
 def evaluate_calculation():
-    pass
+    global calculation
+    try:
+        calculation = str(eval(calculation))
+        text_result.delete(1.0, "end")
+        text_result.insert(1.0, calculation)
+    except:
+        clear_field()
+        text_result.insert(1.0, "error")
 
 def clear_field():
     pass 
