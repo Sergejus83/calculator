@@ -24,6 +24,8 @@ def evaluate_calculation():
         text_result.insert(1.0, "error")
 
 def clear_field():
-    pass 
+    global calculation
+    calculation = ""
+    text_result.delete(1.0, "end")
 
 window.mainloop()
